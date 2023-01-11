@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Tebak Angka</title>
+</head>
+<body>
+    <div class="container">
+        <div id="home" class="layer">
+            <h1></h1>
+            <img src="./images/gambar-start.gif" width="100%">
+            <button onclick="changePage('home', 'layer1')" class="absolute">Mulai</button>
+        </div>
+        <!-- <div id="start" class="layer">
+            <h1>Fikirkan Angka 1 - 100</h1>
+            <button onclick="changePage('start', 'layer1')">NEXT</button>
+            <button onclick="changePage('start', 'home')">HOME</button>
+        </div> -->
+        <div id="layer1" class="number-layer">
+            <img src="./images/gambar-1.gif" width="40%">
+            <div class="layer">
+                <h1>Apakah anda sering menderita sakit kepala?</h1>
+                <button onclick="changePage('layer1', 'layer2', 1)">Ya</button>
+                <button onclick="changePage('layer1', 'layer2', 0)">Tidak</button>
+            </div>
+        </div>
+        <div id="layer2" class="number-layer">
+            <img src="./images/gambar-2.gif" width="40%">
+            <div class="layer">
+                <h1>Apakah anda sulit tidur?</h1>
+                <button onclick="changePage('layer2', 'layer3', 2)">Ya</button>
+                <button onclick="changePage('layer2', 'layer3', 0)">Tidak</button>
+            </div>
+        </div>
+        <div id="layer3" class="number-layer">
+            <img src="./images/gambar-3.gif" width="40%">
+            <div class="layer">
+                <h1>Apakah anda mudah takut?</h1>
+                <button onclick="changePage('layer3', 'layer4', 4)">Ya</button>
+                <button onclick="changePage('layer3', 'layer4', 0)">Tidak</button>
+            </div>
+        </div>
+        <div id="layer4" class="number-layer">
+            <img src="./images/gambar-4.gif" width="40%">
+            <div class="layer">
+                <h1>Apakah anda cemas dan kuatir?</h1>
+                <button onclick="changePage('layer4', 'layer5', 8)">Ya</button>
+                <button onclick="changePage('layer4', 'layer5', 0)">Tidak</button>
+            </div>
+        </div>
+        <div id="layer5" class="number-layer">
+            <img src="./images/gambar-5.gif" width="40%">
+            <div class="layer">
+                <h1>Apakah anda sulit untuk berfikir jernih?</h1>
+                <button onclick="changePage('layer5', 'layer6', 16)">Ya</button>
+                <button onclick="changePage('layer5', 'layer6', 0)">Tidak</button>
+            </div>
+        </div>
+        <div id="layer6" class="number-layer">
+            <img src="./images/gambar-6.gif" width="40%">
+            <div class="layer">
+                <h1>Apakah anda merasa tidak berharga?</h1>
+                <button onclick="changePage('layer6', 'layer7', 32)">Ya</button>
+                <button onclick="changePage('layer6', 'layer7', 0)">Tidak</button>
+            </div>
+        </div>
+        <div id="layer7" class="number-layer">
+            <img src="./images/gambar-7.gif" width="40%">
+            <div class="layer">
+                <h1>Apakah anda merasa lelah sepanjang waktu?</h1>
+                <button onclick="changePage('layer7', 'layer8', 64)">Ya</button>
+                <button onclick="changePage('layer7', 'layer8', 0)">Tidak</button>
+            </div>
+        </div>
+        <div id="layer8" class="number-layer">
+            <img src="./images/gambar-8.gif" width="40%">
+            <div class="layer">
+                <h1>Apakah anda merasa lelah sepanjang waktu?</h1>
+                <button onclick="changePage('layer8', 'layer9', 64)">Ya</button>
+                <button onclick="changePage('layer8', 'layer9', 0)">Tidak</button>
+            </div>
+        </div>
+        <div id="layer9" class="number-layer">
+            <img src="./images/gambar-9.gif" width="40%">
+            <div class="layer">
+                <h1>Apakah anda merasa lelah sepanjang waktu?</h1>
+                <button onclick="changePage('layer9', 'layer10', 64)">Ya</button>
+                <button onclick="changePage('layer9', 'layer10', 0)">Tidak</button>
+            </div>
+        </div>
+        <div id="layer10" class="number-layer">
+            <img src="./images/gambar-10.gif" width="40%">
+            <div class="layer">
+                <h1>Apakah anda merasa lelah sepanjang waktu?</h1>
+                <button onclick="changePage('layer10', 'finish', 64)">Ya</button>
+                <button onclick="changePage('layer10', 'finish', 0)">Tidak</button>
+            </div>
+        </div>
+        <div id="finish" class="layer">
+            <h1>ANGKA YANG ANDA FIKIRKAN ADALAH</h1>
+            <img src="./images/start background.svg" width="100%">
+            <h1 id="result" class="absolute">99</h1>
+            <button onclick="changePage('finish', 'home')" class="absolute home">HOME</button>
+        </div>
+        <div id="failed" class="layer">
+            <img src="./images/start background.svg" width="100%">
+            <h1 class="absolute">ANDA NGAWUR</h1>
+            <button onclick="changePage('failed', 'home')" class="absolute home">HOME</button>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
