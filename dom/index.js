@@ -7,6 +7,7 @@ function changePage(prev, next, num) {
     if (num) {
         total += num;
     }
+    
 
     if(total>=0 && total<=10){
         //nanti display hasil stress rendah jadi flex
